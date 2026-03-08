@@ -1,2 +1,31 @@
-# ckd-joint-modeling-project
-Reproducible analysis of chronic kidney disease progression using joint models for longitudinal and survival data. The project compares GFR, haematocrit, and proteinuria to evaluate which biomarker best predicts disease progression.
+# Chronic Kidney Disease: Joint and Dynamic Predictive Modeling
+
+## Authors: Makena Grigsby & Sharvee Joshi
+
+
+## Overview 
+
+
+The project consists of:
+- blah
+
+This repository contains reproducible code, the final R Markdown report, and all supporting functions.
+
+## Title
+
+
+## Title
+
+### Sub Title
+- 
+
+## References
+
+
+
+## Team Contributions 
+| Team Member            | Contributions                                                                                                                                                                                                                                |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Sharvee** | GitHub setup,  |
+| **Makena**  | Stuff                                         |
+
