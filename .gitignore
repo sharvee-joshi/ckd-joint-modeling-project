@@ -1,0 +1,15 @@
+.Rhistory
+.RData
+.Rproj.user
+.DS_Store
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+
+# Temporary files
+*.tmp
