@@ -14,4 +14,5 @@ install_if_missing <- function(pkg){
   }
 }
 
-sapply(packages, install_if_missing)
+lapply(packages, install_if_missing)
+lapply(packages, library, character.only = TRUE)
