@@ -14,11 +14,11 @@ load("ckd_prepped.RData")
 # --------------------------------------------------
 # 2. Kaplan-Meier curve by baseline proteinuria
 # --------------------------------------------------
-km_fit <- survfit(Surv(fuyears, failure) ~ proteinuria, data = surv_km)
+km_fit <- survfit(Surv(fuyears, failure) ~ proteinuria, data = long_data)
 
 p_km <- ggsurvplot(
   km_fit,
-  data = surv_km,
+  data = long_data,
   xlab = "Follow-Up Time (Years)",
   ylab = "Survival Probability",
   legend.title = "Proteinuria",
@@ -27,6 +27,8 @@ p_km <- ggsurvplot(
   legend = "right",
   ggtheme = theme_minimal()
 )
+
+print(p_km)
 
 # --------------------------------------------------
 # 3. Smoothed trajectory line for GFR
