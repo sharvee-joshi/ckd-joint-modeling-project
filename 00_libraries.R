@@ -5,7 +5,9 @@ packages <- c(
   "ggplot2",
   "survival",
   "survminer",
-  "kableExtra"
+  "kableExtra",
+  "nlme",
+  "JMbayes2"
 )
 
 install_if_missing <- function(pkg){
