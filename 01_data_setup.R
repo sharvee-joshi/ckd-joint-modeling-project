@@ -77,5 +77,5 @@ summary(long_data)
 # ------------------------------------------------------------------
 save(
   gfr, haem, prot, surv, long_data,
-  file = "data/ckd_prepped.RData"
+  file = "ckd_prepped.RData"
 )
