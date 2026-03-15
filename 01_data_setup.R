@@ -76,6 +76,6 @@ summary(long_data)
 # 8. Save cleaned objects for later scripts
 # ------------------------------------------------------------------
 save(
-  gfr, haem, prot, surv, long_data, surv_km,
+  gfr, haem, prot, surv, long_data,
   file = "data/ckd_prepped.RData"
 )
