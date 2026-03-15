@@ -1,4 +1,6 @@
 # Chronic Kidney Disease: Joint and Dynamic Predictive Modeling
+**Methods:** Survival Analysis, Joint Modeling, Dynamic Prediction  
+**Language:** R
 
 ## Authors: Makena Grigsby & Sharvee Joshi
 
@@ -14,6 +16,23 @@ Finally, dynamic prediction methods are applied using the fitted joint models to
 
 This repository contains reproducible code, the final R Markdown report, and all supporting functions.
 
+## Data Description
+
+The dataset used in this analysis contains longitudinal measurements of kidney function biomarkers collected from patients following kidney transplantation. Repeated measurements are available for each patient over follow-up time.
+
+Key variables include:
+
+- **id** – unique patient identifier  
+- **years** – follow-up time (in years) since transplantation  
+- **gfr** – estimated glomerular filtration rate (GFR), a measure of kidney function  
+- **haematocrit** – percentage of red blood cells in blood, reflecting overall blood health  
+- **proteinuria** – indicator of protein in urine, a clinical marker of kidney damage  
+- **failure** – indicator variable for graft failure (1 = graft failure occurred, 0 = censored)  
+- **fuyears** – total follow-up time for each patient  
+- **age, weight, gender** – baseline patient characteristics used as covariates
+
+The longitudinal biomarkers (GFR, haematocrit, and proteinuria) are observed repeatedly during follow-up, while graft failure is treated as the event outcome in the survival analysis.
+
 ## Files Included
 ```
 00_libraries.R
@@ -25,7 +44,22 @@ This repository contains reproducible code, the final R Markdown report, and all
 
 ckd.rdata
 ```
+---
 
+## Required R Packages
+
+The script `00_libraries.R` automatically installs and loads the required packages.  
+These include:
+
+- dplyr
+- ggplot2
+- survival
+- survminer
+- kableExtra
+
+No manual installation is required.
+
+---
 
 ## How to Run the Code
 To reproduce the analysis, please follow the steps outlined below, especially if this is your first time using GitHub.
@@ -50,15 +84,36 @@ source("03_eda_plots.R")
 #add more files here
 ```
 
-- 
+## Output
+
+Running the scripts will generate:
+
+- A missingness summary table
+- Kaplan–Meier survival plot
+- Smoothed biomarker trajectory plots
+- Joint Modeling Results for all three biomarkers
+- Dynamic Predictive Results and Grahpics
+
 
 ## References
 
+Rizopoulos, D. (2012). *Joint Models for Longitudinal and Time-to-Event Data: With Applications in R.* Chapman & Hall/CRC.
+
+Cox, D. R. (1972). Regression models and life-tables. *Journal of the Royal Statistical Society: Series B*, 34(2), 187–220.
+
+Kaplan, E. L., & Meier, P. (1958). Nonparametric estimation from incomplete observations. *Journal of the American Statistical Association*, 53(282), 457–481.
+
+Therneau, T. (2024). *A Package for Survival Analysis in R*. R package **survival**.
+
+Kassambara, A., & Kosinski, M. (2024). *survminer: Drawing Survival Curves using 'ggplot2'*. R package.
 
 
-## Team Contributions 
-| Team Member            | Contributions                                                                                                                                                                                                                                |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Sharvee** | GitHub setup,  |
-| **Makena**  | Stuff                                         |
+
+## Team Contributions
+
+| Team Member | Contributions |
+|-------------|---------------|
+| **Sharvee** | GitHub repository setup and organization, exploratory data analysis (EDA), missingness summaries, survival analysis visualizations, abstract writing, and drafting the joint modeling framework section of the report. |
+| **Makena**  | Implementation and analysis of the dynamic prediction models, major contributions to report writing and proposal development. |
+| **Sharvee & Makena** | Collaborative development of presentation slides and overall project interpretation. |
 
