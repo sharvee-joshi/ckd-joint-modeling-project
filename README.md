@@ -56,6 +56,8 @@ These include:
 - survival
 - survminer
 - kableExtra
+- nlme
+- JMbayes2
 
 No manual installation is required.
 
