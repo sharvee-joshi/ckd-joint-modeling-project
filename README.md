@@ -1,4 +1,4 @@
-# Chronic Kidney Disease: Joint and Dynamic Predictive Modeling
+# Chronic Kidney Disease: Joint and Dynamic Predictive Modeling on Risk of Graft Failure On Renal Transplant Patients
 **Methods:** Survival Analysis, Joint Modeling, Dynamic Prediction  
 **Language:** R
 
