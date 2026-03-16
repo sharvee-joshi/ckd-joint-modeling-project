@@ -118,6 +118,6 @@ Kassambara, A., & Kosinski, M. (2024). *survminer: Drawing Survival Curves using
 | Team Member | Contributions |
 |-------------|---------------|
 | **Sharvee** | GitHub repository setup and organization, exploratory data analysis (EDA), missingness summaries, survival analysis visualizations, abstract writing, and drafting the joint modeling framework section of the report. |
-| **Makena**  | Implementation and analysis of the dynamic prediction models, major contributions to report writing and proposal development. |
+| **Makena**  | Implementation and analysis of the dynamic prediction models, major contributions to report writing and proposal development. Sensitivity analysis. |
 | **Sharvee & Makena** | Collaborative development of presentation slides and overall project interpretation. |
 
