@@ -40,8 +40,8 @@ The longitudinal biomarkers (GFR, haematocrit, and proteinuria) are observed rep
 02_missingness_summary.R
 03_eda_plots.R
 04_jointmodels.R
-05_dynamicmodels.R
-06_sensitivity_analysis.R
+05_dynamic_prediction_proteinuria.R
+06_Sensitivity_Analysis.R
 ckd.rdata
 ```
 ---
@@ -84,8 +84,8 @@ source("01_data_setup.R")
 source("02_missingness_summary.R")
 source("03_eda_plots.R")
 source("04_jointmodels.R")
-source("05_dynamicmodels.R")
-source("06_sensitivity_analysis.R")
+source("05_dynamic_prediction_proteinuria.R")
+source("06_Sensitivity_Analysis.R")
 ```
 
 ## Output
