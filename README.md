@@ -39,9 +39,9 @@ The longitudinal biomarkers (GFR, haematocrit, and proteinuria) are observed rep
 01_data_setup.R
 02_missingness_summary.R
 03_eda_plots.R
-
-#add more files here
-
+04_jointmodels.R
+05_dynamicmodels.R
+06_sensitivity_analysis.R
 ckd.rdata
 ```
 ---
@@ -79,11 +79,13 @@ setwd("path/to/the/unzipped/folder")
 ### 3. Run the scripts in order
 Run the following commands in the R console:
 ```
+source("00_libraries.R")
 source("01_data_setup.R")
 source("02_missingness_summary.R")
 source("03_eda_plots.R")
-
-#add more files here
+source("04_jointmodels.R")
+source("05_dynamicmodels.R")
+source("06_sensitivity_analysis.R")
 ```
 
 ## Output
